@@ -1,0 +1,266 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background-color: rgb(238, 238, 231);
+}
+
+main{
+    margin-top: 6rem;
+}
+
+p{
+    align-self: center;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    color: rgb(85, 81, 81);
+}
+
+h2{
+    font-family: 'Nova Slim', cursive;
+    font-size: 60px;
+    color: rgb(61, 58, 58);
+    margin-left: 3rem;
+}
+
+.shadow-pic{
+    outline: none;
+    border-color: black;
+    box-shadow: 0 0 30px black;
+}
+
+
+.section-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-p{
+    max-width: 70%;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+/*********************************************************** HEADER ******************************************************************/
+
+header{
+    max-height: 7rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#header-pic{
+    max-height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-image: url(img/blur-blue.jpeg);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+#header-pic img{
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+#header-nav{
+    padding-left: 2rem;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#header-nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family: 'Playfair Display SC', serif;
+}
+
+nav a{
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: .5s;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 10px;
+    height: 10px;
+    border: solid 2px;
+    border-width: 0 0 2px 2px;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+nav a:hover:before {
+    bottom: -8px;
+    left: -8px;
+    opacity: 1;
+}
+
+nav a:after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 10px;
+    height: 10px;
+    border: solid 2px;
+    border-width: 2px 2px 0 0;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+nav a:hover:after {
+    top: -8px;
+    right: -8px;
+    opacity: 1;
+}
+
+nav a:hover {
+    color: black;
+}
+
+
+
+
+
+/*********************************************************** MAIN ******************************************************************/
+
+/*************************** Index **************************/
+#kmspic{
+    margin-top: 5rem;
+    margin-bottom: 4.1rem;
+    max-width: 100rem;
+    align-self: center;
+}
+
+#accueil-pic{
+    margin: 2.11rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+#accueil-pic img{
+    height: 400px;
+    filter: grayscale(80%);
+}
+
+
+#intro{
+    padding: 2rem;
+    font-size: 30px;
+}
+
+
+/*************************** Histoire **************************/
+#princip{
+    font-size: 30px;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+}
+
+#fondateur{
+    padding: 0px;
+    margin: 0;
+    margin-bottom: 6rem;
+    max-width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+#fondateur img{
+    margin-left: 3rem;
+    max-height: 700px;
+    max-width: 500px;
+}
+
+#fondateur p{
+    margin-left: 6rem;
+    max-width: 100%;
+    margin-top: 0;
+    text-align: start;
+}
+
+#origine{
+    margin-left: 3rem;
+    margin-bottom: 6rem;
+    display: flex;
+}
+
+#origine img{
+    margin-right: 3rem;
+    margin-right: 3rem;
+    max-height: 650px;
+    max-width: 500px;
+}
+
+#origine p{
+    text-align: start;
+}
+
+#l-defense p{
+    margin-left: 6rem;
+    text-align: start;
+}
+
+
+/*************************** Index **************************/
+#amis img{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#amis-liens{
+    max-width: 20rem;
+}
+/*********************************************************** FOOTER ******************************************************************/
+#footer{
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#footer p{
+    margin: 0;
+    padding-left: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+#footer a{
+    padding-left: 0.3rem;
+    padding-right: 0.7rem;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white    ;
+}
+
+.fa-facebook{
+    font-size: 20px;
+}
