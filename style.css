@@ -1,9 +1,8 @@
 body{
     margin: 0;
     padding: 0;
-    width: 100vw;
+    width: 100%;
     background-color: rgb(238, 238, 231);
-    overflow-x: hidden;
 }
 
 main{
@@ -283,7 +282,7 @@ nav span:hover {
     
 }
 
-.img-container{
+.img-container1{
     transition: 0.5s;
     width: fit-content;
     height: fit-content;
@@ -296,16 +295,38 @@ nav span:hover {
     background-color: rgb(37, 34, 34);
     outline: none;
     border-color: black;
-    box-shadow: 0 0 30px black;
 }
 
-.img-container:hover{
+.img-container1:hover{
     border-radius: 5%;
     transform: scale(1.2) rotate(9deg);
     transition: 0.8s;
     z-index: 1000;
+    box-shadow: 0 0 30px black;
 }
 
+.img-container2{
+    transition: 0.5s;
+    width: fit-content;
+    height: fit-content;
+    margin: 2rem;
+    padding: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    background-color: rgb(37, 34, 34);
+    outline: none;
+    border-color: black;
+}
+
+.img-container2:hover{
+    border-radius: 5%;
+    transform: scale(1.2) rotate(-9deg);
+    transition: 0.8s;
+    z-index: 1000;
+    box-shadow: 0 0 30px black;
+}
 
 
 /*************************** Amis **************************/
@@ -346,10 +367,14 @@ nav span:hover {
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
+    box-shadow: none;
 }
 .amis-liens:hover img {
 	-webkit-transform: scale(1.3);
 	transform: scale(1.3);
+    border-radius: 100px;
+    transition: 1s;
+    box-shadow: 0 0 30px black;
 }
 
 
@@ -381,6 +406,29 @@ nav span:hover {
     width: 200px;
 }
 
+#cjaune:hover{
+    box-shadow: 0 0 30px rgb(231, 218, 32);
+}
+
+#corange:hover{
+    box-shadow: 0 0 30px rgb(238, 149, 47);
+}
+
+#cverte:hover{
+    box-shadow: 0 0 30px rgb(14, 185, 9);
+}
+
+#cbleue:hover{
+    box-shadow: 0 0 30px #2842b6;
+}
+
+#cmarron:hover{
+    box-shadow: 0 0 30px rgb(158, 97, 6);
+}
+
+#cnoire:hover{
+    box-shadow: 0 0 30px rgb(17, 16, 1);
+}
 
 /*************************** Fonctionnement du Club **************************/
 #cours h2{
@@ -455,26 +503,28 @@ nav span:hover {
 
 
 /*************************** Contact **************************/
+#contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #contact{
     margin-top: 3rem;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .contact-box{
-    width: 20rem;
-    margin: 3rem;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     font-size: 30px;
-    box-shadow: 0 0 30px #2842b6;
 }
 
 .contact-box a{
-    text-align: center;
     text-decoration: none;
     font-family: 'Libre Baskerville', serif;
     color: rgb(85, 81, 81);
@@ -488,22 +538,31 @@ nav span:hover {
 
 .contact-box i{
     margin: 2rem;
-    font-size: 100px;
+    padding: 1.5rem;
+    font-size: 50px;
     color: black;
+    transition: 0.8s;
+}
+
+.contact-box i:hover{
+    transform: scale(1.8) rotate(360deg);
+    transition: 0.8s;
+    color: #2842b6;
 }
 
 #map{
     margin: 3rem;
     align-self:  center;
-    height: 35rem;
-    width: 60rem;
-    box-shadow: 0 0 30px #2842b6;
+    height: 30rem;
+    width: 40rem;
     transition: 0.5s;
 }
 
 #map:hover{
     transform: scale(1.1);
+    border-radius: 50px;
     transition: 0.8s;
+    box-shadow: 0 0 30px #2842b6;
 }
 
 #formulaire{
@@ -514,14 +573,20 @@ nav span:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 5%;
+    border-radius: 50px;
     align-items: center;
-    background-color: rgb(250, 250, 250);
+    transition: 0.6s;
+}
+
+#formulaire:hover{
+    transform: scale(1.1);
     box-shadow: 0 0 30px #2842b6;
+    background-color: rgb(250, 250, 250);
+    transition: 0.6s;
 }
 
 #formulaire h2{
-    align-self: flex-start;
+    align-self: center;
     margin-left: 0;
 }
 
