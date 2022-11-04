@@ -18,9 +18,14 @@ p{
 
 h2{
     font-family: 'Nova Slim', cursive;
-    font-size: 60px;
+    font-size: 50px;
     color: rgb(61, 58, 58);
     margin-left: 3rem;
+}
+
+.nav-pos{
+    font-weight: bold;
+    color: black;
 }
 
 .shadow-pic{
@@ -37,7 +42,7 @@ h2{
 
 .text-p{
     max-width: 70%;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 50px;
 }
 
@@ -155,45 +160,35 @@ nav span:hover {
 #accueil h1{
     margin-top: 3rem;
     margin-bottom: 3rem;
-    font-size: 250px;
+    font-size: 150px;
     text-align: center;
     font-family: 'Kolker Brush', cursive;
     color: #2842b6;
     text-shadow:
-        1px 1px #b1b1b1,
-        1px 1px #b1b1b1,
-        1px 1px #b1b1b1,
-        1px 1px #b1b1b1,
-        1px 1px #b1b1b1,
-        1px 1px #b1b1b1,
-        1px 1px #b1b1b1,
-        1px 1px #b1b1b1,
-        1px 1px #b1b1b1,
-        1px 1px 1px #b1b1b1,
-    1px 18px 6px #2d2d2d66,
-    1px 22px 10px #2d2d2d66,
-    1px 25px 35px #2d2d2d66,
-    1px 30px 60px #2d2d2d66;
+    1px 18px 6px #32698366,
+    1px 22px 10px #32698366,
+    1px 25px 35px #32698366,
+    1px 30px 60px #32698366;
 }
 
 #video-container{
     width: fit-content;
     height: fit-content;
     padding: 0.5rem;
-    margin-bottom: 6rem;
+    margin-bottom: 4.3rem;
     display: flex;
     justify-content: center;
     align-items: center;
     align-self: center;
-    border-radius: 5%;
+    border-radius: 25px;
     background-color: rgb(37, 34, 34);
 }
 
 #accueil video{
     height: auto;
-    width: 80rem;
+    width: 60rem;
     align-self: center;
-    border-radius: 5%;
+    border-radius: 25px;
 }
 
 #accueil-pic{
@@ -225,8 +220,8 @@ nav span:hover {
 
 #fondateur{
     padding: 0px;
-    margin: 0;
     margin-bottom: 6rem;
+    margin: 0;
     max-width: 100%;
     display: flex;
     justify-content: start;
@@ -247,9 +242,10 @@ nav span:hover {
 }
 
 #origine{
-    margin-left: 3rem;
+    margin-left: 6rem;
     margin-bottom: 6rem;
     display: flex;
+    flex-wrap: wrap;
 }
 
 #origine img{
@@ -430,6 +426,7 @@ nav span:hover {
     box-shadow: 0 0 30px rgb(17, 16, 1);
 }
 
+
 /*************************** Fonctionnement du Club **************************/
 #cours h2{
     padding-top: 5rem;
@@ -442,7 +439,7 @@ nav span:hover {
 #horaires p, #tarifs p, #equipement p, #inscription p{
     margin-left: 6rem;
     text-align: start;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 #cours a{
@@ -452,7 +449,7 @@ nav span:hover {
     text-align: center;
     font-family: 'Libre Baskerville', serif;
     color: rgb(85, 81, 81);
-    font-size: 30px;
+    font-size: 20px;
     line-height: 60px;
 }
 
@@ -477,17 +474,16 @@ nav span:hover {
     justify-content: start;
 }
 
-.instru-name{
-    font-size: 50px;
-    font-weight: bold;
-}
-
 .instru-pic p{
     margin: 0;
     padding: 1rem;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 40px;
+}
+
+.instru-name{
+    font-weight: bold;
 }
 
 #instructeurs img{
@@ -499,14 +495,16 @@ nav span:hover {
 #sensei{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 
 /*************************** Contact **************************/
 #contact-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 #contact{
@@ -555,14 +553,8 @@ nav span:hover {
     align-self:  center;
     height: 30rem;
     width: 40rem;
-    transition: 0.5s;
-}
-
-#map:hover{
-    transform: scale(1.1);
     border-radius: 50px;
-    transition: 0.8s;
-    box-shadow: 0 0 30px #2842b6;
+    transition: 0.5s;
 }
 
 #formulaire{
@@ -579,7 +571,7 @@ nav span:hover {
 }
 
 #formulaire:hover{
-    transform: scale(1.1);
+    transform: scale(1.01);
     box-shadow: 0 0 30px #2842b6;
     background-color: rgb(250, 250, 250);
     transition: 0.6s;
@@ -622,7 +614,7 @@ nav span:hover {
 }
 
 #submit:hover{
-    transform: scale(1.3);
+    transform: scale(1.03);
     background-color: #1e07af;
     transition: 0.6s;
 }
